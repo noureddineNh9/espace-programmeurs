@@ -1,0 +1,55 @@
+.content {
+   margin-left: 250px;
+   transition: margin-left 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: var(--color-slate-10);
+}
+
+p {
+   color: var(--color-slate-9);
+}
+
+body {
+   &.modal-active {
+      overflow: hidden;
+   }
+}
+
+.link {
+   text-decoration: underline;
+   transition: all 0.2s;
+   color: var(--color-slate-6);
+   opacity: 0.7;
+   &:hover {
+      color: var(--color-3);
+   }
+}
+
+.link__2 {
+   transition: all 0.2s;
+   color: var(--color-slate-6);
+   opacity: 0.7;
+   &:hover {
+      color: var(--color-3);
+   }
+}
+
+.button__2 {
+   padding: 0.8rem 1.6rem;
+   border: 1px solid var(--color-3);
+   background-color: transparent;
+   color: var(--color-3);
+
+   transition: all 0.3s;
+   &:hover {
+      border: 1px solid rgba(#169f95, 0.1);
+      background-color: rgba(#169f95, 0.1);
+   }
+}

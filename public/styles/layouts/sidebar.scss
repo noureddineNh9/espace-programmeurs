@@ -1,0 +1,109 @@
+.sidebar {
+   position: fixed;
+   width: 250px;
+   transition: all 0.3s;
+
+   .menu__list {
+      margin: 0;
+      padding: 0;
+      .menu__item {
+         margin-bottom: 4px;
+         border: 1px solid transparent;
+         padding: 5px 10px;
+         border-radius: 5px;
+         color: $color-slate-7;
+         width: 100%;
+         i {
+            transform: translateY(-1px);
+            margin-right: 2px;
+         }
+         &:hover {
+            border: 1px solid $color-slate-10;
+
+            color: $color-slate-10;
+         }
+      }
+   }
+}
+
+.sidebar__button {
+   display: none;
+   background-color: white;
+   height: 5rem;
+   width: 5rem;
+   border-radius: 50%;
+   position: fixed;
+   top: 4rem;
+   right: 4rem;
+   z-index: 20;
+   -webkit-box-shadow: 0 1rem 3rem rgba(black, 0.1);
+   box-shadow: 0 1rem 3rem rgba(black, 0.1);
+   text-align: center;
+   cursor: pointer;
+   .sidebar__icon {
+      margin-top: 2.5rem;
+      position: relative;
+      &,
+      &::after,
+      &::before {
+         width: 2.4rem;
+         height: 2px;
+         display: inline-block;
+         background-color: black;
+      }
+
+      &::after,
+      &::before {
+         content: "";
+         position: absolute;
+         left: 0;
+         -webkit-transition: all 0.2s;
+         transition: all 0.2s;
+      }
+
+      &::before {
+         top: -0.7rem;
+      }
+
+      &::after {
+         top: 0.7rem;
+      }
+   }
+}
+
+#toggle-sidebar {
+   display: none;
+}
+
+#toggle-sidebar:checked ~ .sidebar {
+   transform: translateX(0px);
+}
+#toggle-sidebar:checked ~ .content {
+   margin-left: 0;
+}
+
+@media screen and(max-width: 900px) {
+   .sidebar {
+      transform: translateX(-250px);
+   }
+   .content {
+      margin-left: 0;
+   }
+
+   .sidebar__button {
+      display: block;
+   }
+}
+
+@media screen and(min-width: 901px) {
+   .sidebar {
+      transform: translateX(0px) !important;
+   }
+   .content {
+      margin-left: 250px !important;
+   }
+
+   .sidebar__button {
+      display: none !important;
+   }
+}

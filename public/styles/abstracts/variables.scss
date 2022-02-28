@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
+$font-Poppins: "Poppins", sans-serif;
+
+:root {
+   --color-1: #3ab595;
+   --color-2: #169f95;
+   --color-3: #08898e;
+   --color-4: #1b7381;
+   --color-5: #295d6f;
+   --color-6: #2f4858;
+
+   --color-slate-1: rgb(248, 250, 252);
+   --color-slate-2: rgb(241, 245, 249);
+   --color-slate-3: rgb(226, 232, 240);
+   --color-slate-4: rgb(203, 213, 225);
+   --color-slate-5: rgb(148, 163, 184);
+   --color-slate-6: rgb(100, 116, 139);
+   --color-slate-7: rgb(71, 85, 105);
+   --color-slate-8: rgb(51, 65, 85);
+   --color-slate-9: rgb(30, 41, 59);
+   --color-slate-10: rgb(15, 23, 42);
+}
+
+$color-green-1: #3ab595;
+
+$color-slate-1: rgb(248, 250, 252);
+$color-slate-2: rgb(241, 245, 249);
+$color-slate-3: rgb(226, 232, 240);
+$color-slate-4: rgb(203, 213, 225);
+$color-slate-5: rgb(148, 163, 184);
+$color-slate-6: rgb(100, 116, 139);
+$color-slate-7: rgb(71, 85, 105);
+$color-slate-8: rgb(51, 65, 85);
+$color-slate-9: rgb(30, 41, 59);
+$color-slate-10: rgb(15, 23, 42);
+
+$color-blue-1: hsl(205, 86%, 17%);
+$color-blue-2: hsl(205, 77%, 27%);
+$color-blue-3: hsl(205, 72%, 37%);
+$color-blue-4: hsl(205, 63%, 48%);
+$color-blue-5: hsl(205, 78%, 60%);
+$color-blue-6: hsl(205, 89%, 70%);
+$color-blue-7: hsl(205, 90%, 76%);
+$color-blue-8: hsl(205, 86%, 81%);
+$color-blue-9: hsl(205, 90%, 88%);
+$color-blue-10: hsl(205, 100%, 96%);
+
+//COLORS
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+$color-white: #fff;
+$color-black: #000;
+
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);

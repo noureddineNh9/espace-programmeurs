@@ -1,0 +1,11 @@
+{
+   "scripts": {
+      "scss": "node-sass --watch ./public/styles/main.scss ./public/styles/main.css"
+   },
+   "devDependencies": {
+      "prettier": "^2.5.1"
+   },
+   "dependencies": {
+      "node-sass": "^7.0.1"
+   }
+}

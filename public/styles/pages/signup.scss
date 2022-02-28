@@ -1,0 +1,105 @@
+$color-1: #3ab595;
+
+.signup__container {
+   display: grid;
+   grid-template-columns: 2fr 3fr;
+   height: 100vh;
+   .left__part {
+      background-color: $color-1;
+
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .container {
+         max-width: 500px;
+      }
+      h1 {
+         margin-bottom: 20px;
+         font-size: 40px;
+         color: white !important;
+      }
+      p {
+         margin-bottom: 40px;
+         font-weight: 300;
+         color: white !important;
+      }
+      button {
+         border: 1px solid white;
+         border-radius: 30px;
+         padding: 15px 20px;
+         background: transparent;
+         color: white;
+         width: 180px;
+         font-size: 16px;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         transition: all 0.2s;
+         cursor: pointer;
+         &:hover {
+            background: rgba(255, 255, 255, 0.294);
+         }
+      }
+   }
+
+   .right__part {
+      text-align: center;
+      h1 {
+         margin-bottom: 20px;
+         font-size: 40px;
+         color: $color-1;
+      }
+      p {
+         font-weight: 300;
+      }
+      form {
+         max-width: 450px;
+         margin: 0 auto;
+
+         .img__profile_container {
+            position: relative;
+            img {
+               width: 100px;
+               height: 100px;
+               object-fit: cover;
+               border-radius: 50%;
+            }
+
+            .edit {
+               cursor: pointer;
+               position: absolute;
+               bottom: -15px;
+               right: 0;
+            }
+         }
+
+         input {
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(245, 245, 245);
+            margin-bottom: 12px;
+            outline: none;
+            width: 100%;
+         }
+
+         button {
+            border: none;
+            border-radius: 30px;
+            padding: 15px 20px;
+            background: $color-1;
+            color: white;
+            width: 180px;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.2s;
+
+            cursor: pointer;
+            &:hover {
+               background-color: #3ab595d6;
+            }
+         }
+      }
+   }
+}
